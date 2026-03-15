@@ -4,7 +4,7 @@ import os
 from langchain_chroma import Chroma
 
 from config import DB_PATH
-from loader import load_document
+from loader import load_documents
 
 logger = logging.getLogger(__name__)
 
@@ -27,7 +27,7 @@ def get_vectordb(embedding):
         if os.path.exists(DB_PATH):
             vector_db = load_vectordb(embedding)
         else:
-            chunks = load_document()
+            chunks = load_documents()
             vector_db = create_vectordb(chunks, embedding)
         return vector_db
     except Exception as e:

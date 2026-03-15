@@ -26,7 +26,7 @@ def main():
         if user_input.lower() == "exit":
             break
         else:
-            result = llm_chain(llm, user_input, vector_db, vector_retriever)
+            result = llm_chain(llm, user_input, vector_retriever)
             print(f"Assistant: {result}")
 
 
