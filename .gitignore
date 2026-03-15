@@ -42,4 +42,4 @@ env/
 pip-log.txt
 
 # Project-specific
-vectorstore/
+vectordb/
