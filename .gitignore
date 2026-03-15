@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.egg-info/
+.installed.cfg
+
+# Build / packaging
+build/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+
+# Docs
+docs/_build/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# IDEs / editors
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# Logs
+*.log
+pip-log.txt
+
+# Project-specific
+vectorstore/
