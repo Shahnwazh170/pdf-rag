@@ -9,7 +9,7 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Models
 EMBEDDING_MODEL = "models/gemini-embedding-001"
-CHAT_MODEL = "gemini-2.0-flash-lite"
+CHAT_MODEL = "gemini-2.5-flash"
 
 # PDF
 FILE_NAME = "ShahnwazHusain_Resume.pdf"

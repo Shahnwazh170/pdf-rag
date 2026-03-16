@@ -25,4 +25,5 @@ def load_documents():
         except FileNotFoundError:
             logger.error(f"File {file} not found in the root directory")
             raise
+    print(chunks)
     return chunks

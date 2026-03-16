@@ -28,7 +28,7 @@ def get_vectordb(embedding):
             vector_db = load_vectordb(embedding)
         else:
             chunks = load_documents()
-            vector_db = create_vectordb(chunks, embedding)
+            vector_db = create_vectordb(embedding, chunks)
         return vector_db
     except Exception as e:
         logger.error(f"Error occurred: {e}")
