@@ -4,11 +4,11 @@ logger = logging.getLogger(__name__)
 
 
 def format_response(context, response):
-    source_map = defaultdict(list)
+    source_map = defaultdict(set)
     for doc in context:
         source = doc.metadata['source']
         page = doc.metadata['page']
-        source_map[source].append(page)
+        source_map[source].add(page)
 
     source_str = "\n\n".join([f"Source: {key}, Pages: {val}" for key,val in source_map.items()])
     if source_str:
